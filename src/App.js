@@ -22,7 +22,8 @@ const App = () => {
 
   return (
     <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      <h1>Admin Dashboard</h1>
+      <h1>Welcome To Task Master</h1>
+      <h3>We are here to help you create and manage your special tasks</h3>
       <TaskForm addTask={addTask} />
       <TaskList tasks={tasks} editTask={editTask} deleteTask={deleteTask} />
     </div>

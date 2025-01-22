@@ -1,4 +1,4 @@
-/* index.css */
+/* General body and container styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -36,6 +36,7 @@ input, select {
   border-radius: 3px;
 }
 
+/* Task card styles */
 .task-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -65,3 +66,112 @@ input, select {
   color: green;
 }
 
+/* Task list styles */
+.task-list {
+  margin-top: 20px;
+}
+
+.task-list .task-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list .task-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-list .task-card-header input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-list .task-card-header h4 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.task-list .task-card-header button {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.task-list .task-card-content {
+  margin-top: 10px;
+}
+
+.task-list .task-card-content p {
+  margin: 5px 0;
+}
+
+/* Priority highlighting */
+.priority-high {
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.priority-medium {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+.priority-low {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Edit form styles */
+.task-card-edit-form {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-card-edit-form h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.task-card-edit-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card-edit-form form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.task-card-edit-form form input,
+.task-card-edit-form form select,
+.task-card-edit-form form textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.task-card-edit-form form button {
+  padding: 8px 12px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-card-edit-form form button:hover {
+  background-color: #e0a800;
+}
+
+.task-card-edit-form form .cancel-btn {
+  background-color: #dc3545;
+  margin-top: 5px;
+}
+
+.task-card-edit-form form .cancel-btn:hover {
+  background-color: #c82333;
+}

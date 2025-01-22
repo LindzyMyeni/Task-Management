@@ -81,6 +81,7 @@ const TaskForm = ({ addTask }) => {
           value={task.dueDate}
           onChange={handleChange}
           style={{ padding: "5px", width: "100%" }}
+          min={new Date().toISOString().split("T")[0]} 
           required
         />
       </label>
